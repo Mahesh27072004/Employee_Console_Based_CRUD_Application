@@ -37,46 +37,38 @@ The application interacts with a relational database (e.g., MySQL) through a tex
 
 ---
 
-**🧪 How to Run the Project**
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/your-username/your-repo-name.git
-   cd your-repo-name
-   
-Configure your database
+## ⚙️ Configure Your Database
 
-Create a MySQL database (e.g., xyz)
+1. **Create a MySQL database** (e.g., `xyz`)
+2. **Create the required table** by executing:
 
-Create the required table (mytable):
-SQL
-CREATE TABLE mytable (
-  eid INT PRIMARY KEY,
-  ename VARCHAR(50),
-  eaddress VARCHAR(100),
-  esalary INT,
-  username VARCHAR(30),
-  password VARCHAR(20)
-);
+   ```sql
+   CREATE TABLE mytable (
+     eid INT PRIMARY KEY,
+     ename VARCHAR(50),
+     eaddress VARCHAR(100),
+     esalary INT,
+     username VARCHAR(30),
+     password VARCHAR(20)
+   );
+Update DB credentials in your ConnectionFactory class (url, username, password)
 
-Update DB credentials in your ConnectionFactory class
-
-Compile and run the application
-
-Using terminal:
-bash
+▶️ Compile and Run the Application
+🖥️ Using Terminal
 javac Main.java
 java Main
-Or run from your IDE
+💡 Or run from your IDE (Eclipse, IntelliJ, etc.)
 
-📌 Sample Validation Rules
+📌 Validation Rules
 
-Field	    Rule
-eid	      1 to 999
-ename	    2 to 50 characters
-eaddress	5 to 100 characters
-esalary	  Greater than 0 and ≤ 100000
-username	6 to 30 characters
-password	8 to 20 characters
+Field      | Rule
+-----------|-----------------------------------------
+eid        | Must be between 1 and 999
+ename      | Length between 2 and 50 characters
+eaddress   | Length between 5 and 100 characters
+esalary    | Greater than 0 and less than or equal to 100000
+username   | Length between 6 and 30 characters
+password   | Length between 8 and 20 characters
 
 🤝 Contributing
 Feel free to fork this repo, raise issues, or contribute improvements via pull requests.
