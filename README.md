@@ -9,9 +9,13 @@ The application interacts with a relational database (e.g., MySQL) through a tex
 
 **📂 Project Structure**
 ├── dto/ # DTO classes (e.g., Employee) 
+
 ├── dao/ # Data Access Layer 
+
 ├── service/ # Business Logic Layer 
+
 ├── controller/ # Controls application flow (entry point) 
+
 ├── connectionFactory/ # JDBC connection utility
 
 ---
