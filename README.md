@@ -59,9 +59,13 @@ The application interacts with a relational database (e.g., MySQL) through a tex
 Update DB credentials in your ConnectionFactory class (url, username, password)
 
 ▶️ Compile and Run the Application
+
 🖥️ Using Terminal
+
 javac Main.java
+
 java Main
+
 💡 Or run from your IDE (Eclipse, IntelliJ, etc.)
 
 📌 Validation Rules
